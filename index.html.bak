@@ -59,7 +59,7 @@
                         <h2 class="heading">About Me</h2>
                         <div class="content">
                             <p>
-                                Hello, I'm still updating this page as it was created recently (First version on June 10th, please come back soon to see all the information in order)
+                                Hello, I'm still updating this page as it was created recently (First version released on June 10th, please come back soon to see all the information in order)
                             </p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
@@ -96,7 +96,7 @@
                             <div class="item row">
                                 <img class="col-md-4 col-sm-4 col-xs-12 img-responsive" src="assets/images/projects/cacoo.png" alt="Nulab Cacoo API" />
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title">Nulab Cacoo API</h3>
+                                    <h3 class="title">Onomastic Index of Empire Senators</h3>
                                     <p>Public index informing about the pronouncements of Brazilian senators from 1826 to 1889.</p>
                                     <p><a class="more-link" href="https://www12.senado.leg.br/dados-abertos/legislativo/parlamentares/indice-onomastico-dos-anais-do-imperio" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                 </div><!--//desc-->                          
@@ -133,58 +133,44 @@
                             <div class="item">
                                 <h3 class="title">PMO & Team Leader - <span class="place"><a href="#">Quantum Leap</a></span> <span class="year">(2021)</span></h3>
                                 <p>
+								Project Management Officer:<br>
                                 ● Development of software and hardware solutions in B2B and B2C environments<br>
 ● Responsible for indetifying operational risks, areas for improvement and escalating any urgent issues.<br>
 ● Development of design and creation workflow according to ISO 9001 standards<br>
 ● Organization of meetings and scheduling activities<br>
 ● Coordination on the assembly of prototypes<br>
 <br>
+Team Leader:<br>
 ● Connection between the development team and the clients<br>
 ● Meetings with the CEO to track progress<br>
 ● Task delegation<br>
 ● Risk analysis and notification<br>
                                 </p>
                             </div>
-                            <div class="item">
-                                <h3 class="title">Staff Software Engineer - <span class="place"><a href="#">IBM Security</a></span> <span class="year">(2014 - 2016)</span></h3>
+ <div class="item">
+                                <h3 class="title">IT Infrastructure Technitian - <span class="place"><a href="#">CTIS/SONDA</a></span> <span class="year">(2019-2021)</span></h3>
                                 <p>
-                                ● Building the automation test suite single-handedly for the Data Integrator using Selenium WebDriver and Java PL.
-                                <br>
-                                ● Led a small team of four through 9 successful releases of our Data Integrator project, which impacts thousands of users from customers at large companies such as AT&T and Costco.
-                                <br>
-                                ● Created multiple virtual machine templates stored on the VMware ESXi Server used by more than 20 internal customers for expediting developer and tester environment setup.
-                                <br>
-                                ● Developed 5 BASH scripts to simplify the process of starting and stopping the Data Integrator server instance, its assembly lines and monitoring assembly lines.
-                                <br>
-                                ● Developed more than 10 BASH scripts for internal customers to automate the process of running/terminating middleware.
-                                <br>
-                                ● Led the fix pack development effort for our Identity Management product while the developer was on leave.
-                                <br>
-                                ● Discovered 7 legacy bugs within 2 months of joining the development team.
+                                ● Quality assurance of the IT systems and applications used by Brazil's TJDFT, Agriculture Ministry and their 30 related localities<br>
+● Installation, relocation, repair and operation of workstations, videoconference and related systems<br>
+● End-user support, on-site and remote issue tracking and solving; Network monitoring and stability assurance<br>
+● Backup and restoration procedures<br>
+● User orientation<br>
+● Security guarantee of sensitive information<br>
                                 </p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Product Management Intern - <span class="place"><a href="#">IBM</a></span> <span class="year">(2013 - 2014)</span></h3>
+                            </div>
+							
+							<div class="item">
+                                <h3 class="title">Intern - <span class="place"><a href="#">Federal Senate</a></span> <span class="year">(2017-2019)</span></h3>
                                 <p>
-                                ● Created 23 mockup web application demos using popular web technologies and photo editing software to mimic the real software product.
-                                <br>
-                                ● Created powerpoint slides to demonstrate the features of select software products.
-                                <br>
-                                ● Developed use cases for our sales and marketing teams to demonstrate to practical customer scenarios.
-                                <br>
-                                ● Collaborated with the Software Architect to gather customer requirements and understand business goals for constructing software product use cases.
+                                ● Development of the Onomastic Index of Empire Senators
                                 </p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Web Developer - <span class="place"><a href="#">DaVinci Business Graphics</a></span> <span class="year">(2012 - 2013)</span></h3>
+                            </div>
+  							<div class="item">
+                                <h3 class="title">Intern - <span class="place"><a href="#">Environment Ministry</a></span> <span class="year">(2017-2019)</span></h3>
                                 <p>
-                                ● Converted an existing web application to support mobile devices such as the iPad and iPhone.
-                                <br>
-                                ● Implemented a driver program using C# that integrates with their existing web application to detect end users' browsers and devices using CSS Media Queries.
+                                ● Development of PNLA's Dynamic Geoprocessing Charts
                                 </p>
-                            </div><!--//item-->
-                            
+                            </div>                          
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
