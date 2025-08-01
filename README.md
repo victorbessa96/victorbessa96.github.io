@@ -1,4 +1,4 @@
-# Professional Portfolio - Victor Bessa Ribeiro
+# Professional Portfolio
 
 A modern, responsive personal portfolio website for Victor Bessa Ribeiro, a cybersecurity innovation leader with expertise in threat intelligence, risk management, and security operations.
 
