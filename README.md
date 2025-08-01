@@ -60,29 +60,6 @@ This portfolio is designed to be hosted on GitHub Pages:
 └── README.md               # This file
 ```
 
-## Planned Improvements
-
-### Short-term Enhancements
-- [ ] Add GitHub activity integration to showcase recent contributions
-- [ ] Implement a blog section for technical articles and insights
-- [ ] Add project demos or case studies with more detailed descriptions
-- [ ] Include a contact form for direct messaging
-- [ ] Enhance accessibility features (ARIA labels, better contrast ratios)
-
-### Medium-term Features
-- [ ] Dark mode toggle for user preference
-- [ ] PDF resume download functionality
-- [ ] Skills visualization with charts or progress bars
-- [ ] Multilingual support for Portuguese and English
-- [ ] Integration with professional APIs (LinkedIn, GitHub)
-
-### Long-term Goals
-- [ ] Portfolio redesign with modern framework (React/Vue.js)
-- [ ] Admin panel for easy content management
-- [ ] Performance optimization (lazy loading, image optimization)
-- [ ] SEO enhancements for better search visibility
-- [ ] Progressive Web App (PWA) features for offline access
-
 ## Contributing
 
 This is a personal portfolio project. However, suggestions and feedback are welcome. Please open an issue for any recommendations or improvements.
