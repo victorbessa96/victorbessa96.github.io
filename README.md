@@ -1,11 +1,11 @@
 # Victor Bessa Ribeiro — Portfolio
 
-Personal portfolio website for Victor Bessa Ribeiro, Head of Security Architecture and Engineering at Zerum IT (CISSP, ISO 27001/42001 Lead Auditor).
+Personal portfolio website for Victor Bessa Ribeiro, cybersecurity executive (CISSP, ISO 27001/42001 Lead Auditor).
 
 ## Design
 
 - **Layout**: Fixed sidebar (Brittany Chiang pattern) with scrollspy navigation, dark/light theme toggle
-- **Design system**: Zerum CloudLynx token system (zinc-scale surfaces, lime accent #95be1f, purple brand)
+- **Design system**: Custom dark theme (zinc-scale surfaces, lime accent #95be1f, purple brand)
 - **Typography**: Self-hosted Inter (400/500/600/700 woff2, via Fontsource)
 - **Pattern**: Flat design (borders, not shadows), no third-party CDN dependencies
 

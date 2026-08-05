@@ -124,12 +124,4 @@
         });
     });
 
-    // ── Print Resume button ──────────────────────────────
-    var printBtn = document.getElementById('printBtn');
-    if (printBtn) {
-        printBtn.addEventListener('click', function() {
-            window.print();
-        });
-    }
-
 })();
