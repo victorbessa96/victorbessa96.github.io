@@ -73,8 +73,12 @@ a.btn {
   border-radius: 30px;
 }
 
-.btn .fa,
-a.btn .fa {
+.btn .fas,
+.btn .fab,
+.btn .far,
+a.btn .fas,
+a.btn .fab,
+a.btn .far {
   margin-right: 8px;
 }
 
@@ -156,7 +160,7 @@ a.btn-cta-primary:hover,
   margin: 0;
 }
 
-.header .location .fa {
+.header .location .fas {
   margin-right: 8px;
 }
 
@@ -182,7 +186,9 @@ a.btn-cta-primary:hover,
   transform: translateY(-3px);
 }
 
-.header .social a .fa {
+.header .social a .fas,
+.header .social a .fab,
+.header .social a .far {
   font-size: 24px;
   padding-top: 13px;
 }
@@ -277,19 +283,22 @@ a.btn-cta-primary:hover,
 }
 
 /* Projects Section */
-.projects .item {
+.projects .item,
+.achievements .item {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #eee;
 }
 
-.projects .item:last-child {
+.projects .item:last-child,
+.achievements .item:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
 }
 
-.projects .item .title {
+.projects .item .title,
+.achievements .item .title {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 10px;
@@ -302,7 +311,8 @@ a.btn-cta-primary:hover,
   font-size: 16px;
 }
 
-.projects .item p {
+.projects .item p,
+.achievements .item p {
   color: #555;
   margin-bottom: 15px;
 }
@@ -313,18 +323,20 @@ a.btn-cta-primary:hover,
 }
 
 /* Info Section */
-.info .fa {
+.info .fas,
+.info .fab,
+.info .far {
   margin-right: 15px;
   color: #3498db;
   width: 20px;
   text-align: center;
 }
 
-.info .fa.fa-envelope-o {
+.info .far.fa-envelope {
   font-size: 16px;
 }
 
-.info .fa.fa-phone {
+.info .fas.fa-phone {
   font-size: 18px;
 }
 
@@ -471,7 +483,7 @@ a.btn-cta-primary:hover,
   color: #3498db;
 }
 
-.footer .fa-heart {
+.footer .fas.fa-heart {
   color: #e74c3c;
 }
 

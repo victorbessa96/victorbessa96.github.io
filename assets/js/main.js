@@ -1,13 +1,15 @@
-jQuery(document).ready(function($) {
+document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for anchor links
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $($(this).attr('href'));
-        
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
+    var links = document.querySelectorAll('a[href^="#"]');
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function(event) {
+            var href = this.getAttribute('href');
+            if (href === '#' || href.length < 2) return;
+            var target = document.querySelector(href);
+            if (target) {
+                event.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
 });
