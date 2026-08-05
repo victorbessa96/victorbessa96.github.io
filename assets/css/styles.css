@@ -335,17 +335,18 @@ body {
   line-height: 1.5;
 }
 
-/* Theme toggle */
+/* Theme toggle — fixed top-right of viewport */
 .theme-toggle {
-  position: absolute;
-  top: 32px;
-  right: 32px;
-  width: 32px;
-  height: 32px;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 200;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: var(--bg-sidebar);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text-body);
@@ -374,7 +375,7 @@ body {
 /* ─── Sections ──────────────────────────────────────────── */
 .section {
   padding: var(--section-py) var(--section-px);
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 .section__inner {
@@ -875,13 +876,6 @@ body {
     font-size: 13px;
   }
 
-  .theme-toggle {
-    position: relative;
-    top: auto;
-    right: auto;
-    order: 6;
-  }
-
   .main {
     margin-left: 0;
   }
@@ -965,10 +959,6 @@ body {
 
   .sidebar__status p {
     font-size: 12px;
-  }
-
-  .theme-toggle {
-    order: 6;
   }
 
   .section {
