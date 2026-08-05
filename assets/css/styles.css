@@ -794,6 +794,11 @@ body {
     --section-px: 32px;
   }
 
+  /* Stack sidebar above main, not side by side */
+  .layout {
+    display: block;
+  }
+
   .sidebar {
     width: 100%;
     height: auto;
@@ -878,29 +883,76 @@ body {
     --section-px: 24px;
   }
 
+  /* Compact sidebar: brand + social on first row, nav on second */
   .sidebar__inner {
     flex-direction: column;
     align-items: stretch;
-    padding: 24px;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .sidebar__brand {
+    gap: 2px;
   }
 
   .sidebar__name {
     font-size: 18px;
   }
 
+  /* Nav: horizontal scroll to save vertical space */
+  .sidebar__nav {
+    order: 3;
+  }
+
   .sidebar__nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
   }
 
   .nav__link {
-    border-bottom: none;
-    border-left: 2px solid transparent;
-    padding: 8px 16px;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    padding: 4px 10px;
+    font-size: 12px;
   }
 
   .nav__link.active {
-    border-bottom: none;
-    border-left-color: var(--accent);
+    border-left: none;
+    border-bottom-color: var(--accent);
+  }
+
+  /* Social + toggle on same row */
+  .sidebar__social {
+    order: 2;
+    gap: 8px;
+  }
+
+  .sidebar__social a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .sidebar__resume {
+    order: 4;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  /* Status: more compact */
+  .sidebar__status {
+    order: 5;
+  }
+
+  .sidebar__status p {
+    font-size: 12px;
+  }
+
+  .theme-toggle {
+    order: 6;
   }
 
   .section {
