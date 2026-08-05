@@ -68,12 +68,21 @@
     function updateActiveNav() {
         var activeId = null;
         var scrollPos = window.scrollY + 100;
+        var scrollBottom = window.scrollY + window.innerHeight;
+        var docHeight = document.documentElement.scrollHeight;
 
-        sections.forEach(function(section) {
-            if (scrollPos >= section.offsetTop) {
-                activeId = section.id;
+        // Bottom-of-page: force last section active
+        if (scrollBottom >= docHeight - 20) {
+            if (sections.length > 0) {
+                activeId = sections[sections.length - 1].id;
             }
-        });
+        } else {
+            sections.forEach(function(section) {
+                if (scrollPos >= section.offsetTop) {
+                    activeId = section.id;
+                }
+            });
+        }
 
         navLinks.forEach(function(link) {
             if (link.getAttribute('data-section') === activeId) {
