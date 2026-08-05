@@ -1,69 +1,36 @@
-# Professional Portfolio
+# Victor Bessa Ribeiro — Portfolio
 
-A modern, responsive personal portfolio website for Victor Bessa Ribeiro, a cybersecurity innovation leader with expertise in threat intelligence, risk management, and security operations.
+Personal portfolio website for Victor Bessa Ribeiro, Head of Security Architecture and Engineering at Zerum IT (CISSP, ISO 27001/42001 Lead Auditor).
 
-## Project Overview
+## Design
 
-This portfolio website showcases professional experience, skills, certifications, and projects in the cybersecurity domain. The site is designed to be clean, professional, and responsive, providing an excellent user experience across all devices.
+- **Layout**: Fixed sidebar (Brittany Chiang pattern) with scrollspy navigation, dark/light theme toggle
+- **Design system**: Zerum CloudLynx token system (zinc-scale surfaces, lime accent #95be1f, purple brand)
+- **Typography**: Self-hosted Inter (400/500/600/700 woff2, via Fontsource)
+- **Pattern**: Flat design (borders, not shadows), no third-party CDN dependencies
 
 ## Features
 
-- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop devices
-- **Modern UI**: Clean, professional design with smooth animations and transitions
-- **Comprehensive Sections**:
-  - Professional summary highlighting expertise and achievements
-  - Detailed work experience with key responsibilities
-  - Key projects showcasing technical and leadership capabilities
-  - Core competencies and skills
-  - Education background
-  - Professional certifications
-  - Language proficiencies
-- **Interactive Elements**:
-  - Smooth scrolling navigation
-  - Hover effects on interactive elements
-  - Animated preloader
-- **Social Integration**: Direct links to LinkedIn, GitHub, and email
+- Single-page static site (no framework, no build step, no npm)
+- 7 sections: About, Experience, Projects, Achievements, Core Competencies, Certifications, Education/Languages
+- Print Resume button with dedicated `@media print` stylesheet
+- JSON-LD Person schema for recruiter discoverability
+- Open Graph + Twitter Card meta tags
+- CSP: `default-src 'self'; script-src 'self'` (no unsafe-inline)
+- Dark/light theme with cookie persistence
+- Responsive: sidebar collapses to top bar at 1024px, compact at 640px
 
-## Technologies Used
-
-- **HTML5**: Semantic markup for content structure
-- **CSS3**: Custom styling with responsive design principles
-- **JavaScript/jQuery**: Interactive elements and smooth scrolling
-- **Bootstrap**: Responsive grid system and components
-- **Font Awesome**: Iconography throughout the site
-- **Google Fonts**: Custom typography (Poppins and Roboto)
-
-### Deployment
-
-This portfolio is designed to be hosted on GitHub Pages:
-1. Push changes to the `main` branch
-2. Enable GitHub Pages in repository settings
-3. The site will be automatically deployed to `https://victorbessa96.github.io`
-
-## Project Structure
+## Structure
 
 ```
-.
-├── index.html              # Main HTML file
-├── assets/
-│   ├── css/
-│   │   └── styles.css      # Custom styling
-│   ├── js/
-│   │   └── main.js         # Custom JavaScript
-│   ├── images/
-│   │   └── projects/       # Project images
-│   └── plugins/            # Third-party libraries
-│       ├── bootstrap/
-│       ├── font-awesome/
-│       └── jquery/
-├── favicon.ico             # Website favicon
-└── README.md               # This file
+index.html              Single-page site
+favicon.ico             ICO favicon (32x32)
+assets/css/styles.css   Design tokens + all styles
+assets/js/main.js       Scrollspy, theme toggle, preloader, print
+assets/fonts/           Inter woff2 (400-700)
+assets/images/          Profile image for OG tags
 ```
 
-## Contributing
+## Deployment
 
-This is a personal portfolio project. However, suggestions and feedback are welcome. Please open an issue for any recommendations or improvements.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+GitHub Pages, served from `main` branch. No build step required. Push to deploy.

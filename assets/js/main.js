@@ -1,6 +1,7 @@
 /* =========================================================
    Victor Bessa Ribeiro — Portfolio JS
-   Scrollspy, theme toggle, preloader, entrance animations
+   Scrollspy, theme toggle, preloader, print resume button.
+   Runs as external file (CSP: script-src 'self').
    ========================================================= */
 
 (function() {
@@ -50,7 +51,7 @@
             var next = current === 'dark' ? 'light' : 'dark';
             root.setAttribute('data-theme', next);
             try {
-                document.cookie = 'theme=' + next + ';path=/;max-age=31536000;SameSite=Lax';
+                document.cookie = 'theme=' + next + ';path=/;max-age=31536000;SameSite=Strict';
             } catch(e) {}
         });
     }
@@ -98,51 +99,6 @@
     // Initial state
     updateActiveNav();
 
-    // ── Section Entrance Animations ──────────────────────
-    var allSections = document.querySelectorAll('.section');
-    if ('IntersectionObserver' in window) {
-        var observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.05,
-            rootMargin: '0px 0px -50px 0px'
-        });
-
-        allSections.forEach(function(section) {
-            observer.observe(section);
-        });
-        // Mark any section already in the viewport on load
-        allSections.forEach(function(section) {
-            var rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                section.classList.add('visible');
-                observer.unobserve(section);
-            }
-        });
-    } else {
-        // Fallback: show all sections
-        allSections.forEach(function(section) {
-            section.classList.add('visible');
-        });
-    }
-    // Final safety: after 4s, if any section still isn't visible, show it
-    // (covers browsers where observer fails silently)
-    setTimeout(function() {
-        allSections.forEach(function(section) {
-            if (!section.classList.contains('visible')) {
-                var rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight + 200) {
-                    section.classList.add('visible');
-                }
-            }
-        });
-    }, 4000);
-
     // ── Smooth scroll for anchor links ───────────────────
     document.querySelectorAll('a[href^="#"]').forEach(function(link) {
         link.addEventListener('click', function(e) {
@@ -158,5 +114,13 @@
             }
         });
     });
+
+    // ── Print Resume button ──────────────────────────────
+    var printBtn = document.getElementById('printBtn');
+    if (printBtn) {
+        printBtn.addEventListener('click', function() {
+            window.print();
+        });
+    }
 
 })();

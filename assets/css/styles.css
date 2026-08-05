@@ -568,7 +568,7 @@ body {
 /* ─── Achievements ─────────────────────────────────────── */
 .achievement-item {
   padding: 24px;
-  background: var(--bg-card);
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: var(--transition);
@@ -776,6 +776,22 @@ body {
   font-family: var(--font-mono);
 }
 
+.footer__contact {
+  margin-top: 8px;
+  font-size: 12px !important;
+  color: var(--text-dim) !important;
+}
+
+.footer__contact a {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer__contact a:hover {
+  color: var(--accent);
+}
+
 /* ─── Icons ────────────────────────────────────────────── */
 .icon {
   width: 20px;
@@ -980,6 +996,45 @@ body {
   }
 }
 
+/* ─── Print (Resume) ──────────────────────────────────── */
+@media print {
+  .sidebar, .preloader, .theme-toggle, .sidebar__resume, .footer__contact {
+    display: none !important;
+  }
+  .main {
+    margin-left: 0 !important;
+  }
+  .section {
+    padding: 12px 0 !important;
+    page-break-inside: avoid;
+  }
+  .section__heading {
+    font-size: 16px !important;
+  }
+  body {
+    font-size: 12pt;
+    color: #000 !important;
+    background: #fff !important;
+  }
+  .exp-item__title, .project-item__title, .cert-item__title, .edu-item__title,
+  .competency-group__title, .achievement-item__title, .section__heading,
+  .sidebar__name {
+    color: #000 !important;
+  }
+  .exp-item__company, .edu-item__org, .cert-item__org, .nav__link,
+  .more-link, .sidebar__title {
+    color: #333 !important;
+  }
+  a {
+    text-decoration: underline;
+    color: #000 !important;
+  }
+  .achievement-item, .cert-item, .contact-item {
+    border: 1px solid #ccc !important;
+    background: transparent !important;
+  }
+}
+
 /* ─── Reduced motion ──────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -987,19 +1042,4 @@ body {
     transition-duration: 0.01ms !important;
   }
   html { scroll-behavior: auto; }
-}
-
-/* ─── Entrance animations ─────────────────────────────── */
-
-/* Sections visible by default. JS adds .anim-init to html element
-   to enable reveal-on-scroll; falls back to visible if no JS. */
-html.anim-init .section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s var(--ease-out), transform 0.4s var(--ease-out);
-}
-
-html.anim-init .section.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
