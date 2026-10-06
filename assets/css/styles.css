@@ -593,6 +593,61 @@ body {
   color: var(--accent-hover);
 }
 
+/* Prose links inside section content — accent, never browser blue */
+.section__content p a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.section__content p a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ─── Earlier Work (compact, subordinate) ─────────────────── */
+.earlier-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.earlier-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.earlier-item__link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.earlier-item__link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.earlier-item__desc {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.earlier-item__desc::before {
+  content: '\00B7'; /* middot separator */
+  margin-right: 8px;
+  color: var(--text-dim);
+}
+
 /* ─── Selected Impact ──────────────────────────────────── */
 .impact-grid {
   display: grid;
