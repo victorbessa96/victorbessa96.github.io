@@ -1,6 +1,6 @@
 # Victor Bessa Ribeiro — Portfolio
 
-Personal portfolio website for Victor Bessa Ribeiro, CISO at Magentrix and Head of Security Architecture & Engineering at Zerum IT (CISSP, ISO 27001/42001 Lead Auditor).
+Personal portfolio website for Victor Bessa Ribeiro, Chief Information Security Officer at Magentrix; previously Head of Security Architecture & Engineering at Zerum IT (CISSP, ISO 27001/42001 Lead Auditor).
 
 ## Design
 
@@ -12,7 +12,7 @@ Personal portfolio website for Victor Bessa Ribeiro, CISO at Magentrix and Head 
 ## Features
 
 - Single-page static site (no framework, no build step, no npm)
-- 7 sections: About, Experience, Projects, Achievements, Core Competencies, Certifications, Education/Languages
+- 7 sections: About, Experience, Projects, Selected Impact, Core Competencies, Certifications, Education/Languages
 - Download Resume button (assets/cv.pdf) with dedicated `@media print` stylesheet
 - JSON-LD Person schema for recruiter discoverability
 - Open Graph + Twitter Card meta tags

@@ -234,6 +234,13 @@ body {
   line-height: 1.4;
 }
 
+.sidebar__tagline {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
 .sidebar__location {
   font-size: 13px;
   color: var(--text-muted);
@@ -566,39 +573,41 @@ body {
   color: var(--accent-hover);
 }
 
-/* ─── Achievements ─────────────────────────────────────── */
-.achievement-item {
-  padding: 24px;
+/* ─── Selected Impact ──────────────────────────────────── */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.impact-stat {
+  padding: 20px;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: var(--transition);
 }
 
-.achievement-item:hover {
+.impact-stat:hover {
   border-color: var(--border-hover);
 }
 
-.achievement-item__title {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-heading);
-  margin-bottom: 4px;
-}
-
-.achievement-item__year {
-  font-size: 13px;
+.impact-stat__value {
+  font-size: 28px;
+  font-weight: 700;
   color: var(--accent);
   font-family: var(--font-mono);
-  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
-.achievement-item p:last-child {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--text-body);
+.impact-stat__label {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
 }
-
 /* ─── Contact ───────────────────────────────────────────── */
 .contact-grid {
   display: grid;
@@ -1016,7 +1025,7 @@ body {
     background: #fff !important;
   }
   .exp-item__title, .project-item__title, .cert-item__title, .edu-item__title,
-  .competency-group__title, .achievement-item__title, .section__heading,
+  .competency-group__title, .impact-stat__value, .section__heading,
   .sidebar__name {
     color: #000 !important;
   }
@@ -1028,7 +1037,7 @@ body {
     text-decoration: underline;
     color: #000 !important;
   }
-  .achievement-item, .cert-item, .contact-item {
+  .impact-stat, .cert-item, .contact-item {
     border: 1px solid #ccc !important;
     background: transparent !important;
   }
