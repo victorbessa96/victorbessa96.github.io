@@ -661,6 +661,120 @@ body {
   line-height: 1.55;
   color: var(--text-muted);
 }
+/* ─── Operating Thesis (About) ──────────────────────────── */
+.thesis {
+  border-left: 2px solid var(--accent);
+  padding: 8px 0 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thesis__line {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text-heading);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.thesis__note {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 720px;
+}
+
+/* ─── Project Case Studies ──────────────────────────────── */
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.project-meta__row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.project-meta dt {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-meta dd {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-body);
+}
+
+/* ─── Perspective (AI security point of view) ────────────── */
+.pov-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.pov-principle {
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.pov-principle:hover {
+  border-color: var(--border-hover);
+}
+
+.pov-principle__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.pov-principle p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* ─── Sidebar Actions (Resume + Contact) ────────────────── */
+.sidebar__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text-body);
+  border: 1px solid var(--border);
+}
+
+.btn--ghost:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+/* ─── Secondary Credential (subordinate) ─────────────────── */
+.cert-item--secondary {
+  opacity: 0.75;
+  border-color: var(--border-subtle);
+}
+
+.cert-item--secondary:hover {
+  border-color: var(--accent);
+}
+
 /* ─── Contact ───────────────────────────────────────────── */
 .contact-grid {
   display: grid;
@@ -1048,6 +1162,11 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .project-meta__row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
   .lead {
     font-size: 16px;
   }
@@ -1078,22 +1197,23 @@ body {
     background: #fff !important;
   }
   .exp-item__title, .project-item__title, .cert-item__title, .edu-item__title,
-  .competency-group__title, .impact-stat__value, .ciso-focus__title, .section__heading,
-  .sidebar__name {
+  .thesis__line, .pov-principle__title, .competency-group__title, .impact-stat__value,
+  .ciso-focus__title, .section__heading, .sidebar__name {
     color: #000 !important;
   }
   .exp-item__company, .edu-item__org, .cert-item__org, .nav__link,
   .more-link, .sidebar__title {
     color: #333 !important;
   }
-  .exp-group, .exp-item__context, .ciso-focus__item, .impact-stat__label, .ciso-focus__item p {
+  .exp-group, .exp-item__context, .thesis__note, .project-meta dt, .project-meta dd,
+  .pov-principle p, .ciso-focus__item, .impact-stat__label, .ciso-focus__item p {
     color: #333 !important;
   }
   a {
     text-decoration: underline;
     color: #000 !important;
   }
-  .impact-stat, .cert-item, .contact-item {
+  .impact-stat, .cert-item, .contact-item, .pov-principle {
     border: 1px solid #ccc !important;
     background: transparent !important;
   }

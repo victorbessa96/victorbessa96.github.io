@@ -12,7 +12,10 @@ Personal portfolio website for Victor Bessa Ribeiro, Chief Information Security 
 ## Features
 
 - Single-page static site (no framework, no build step, no npm)
-- 7 sections: About, Experience, Projects, Selected Impact, Core Competencies, Certifications, Education/Languages
+- 8 sections: About, Experience, Projects (case-study format), Selected Impact, Perspective, Core Competencies, Certifications, Education/Languages
+- Project case studies: Problem / Architecture / My role / Outcome
+- Perspective section: AI security point of view (agents need identity, tools need authorization, autonomy needs controls)
+- Sidebar CTAs: Download Resume + Contact (email)
 - Download Resume button (assets/cv.pdf) with dedicated `@media print` stylesheet
 - JSON-LD Person schema for recruiter discoverability
 - Open Graph + Twitter Card meta tags

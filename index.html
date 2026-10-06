@@ -105,6 +105,7 @@
                         <li><a href="#experience" class="nav__link" data-section="experience">Experience</a></li>
                         <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
                         <li><a href="#achievements" class="nav__link" data-section="achievements">Impact</a></li>
+                        <li><a href="#perspective" class="nav__link" data-section="perspective">Perspective</a></li>
                         <li><a href="#competencies" class="nav__link" data-section="competencies">Skills</a></li>
                         <li><a href="#certifications" class="nav__link" data-section="certifications">Certs</a></li>
                         <li><a href="#education-languages" class="nav__link" data-section="education-languages">Education</a></li>
@@ -124,14 +125,20 @@
                 </div>
 
                 <div class="sidebar__resume">
-                    <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-                        <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Download Resume
-                    </a>
+                    <div class="sidebar__actions">
+                        <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Download Resume
+                        </a>
+                        <a href="mailto:victorbessa96@gmail.com" class="btn btn--ghost">
+                            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4h20a1 1 0 011 1v14a1 1 0 01-1 1H2a1 1 0 01-1-1V5a1 1 0 011-1zm.5 3.5v11h19v-11l-9.5 6.5L2.5 7.5zm9.5 5L3.5 6.5h17L12 12.5z"/></svg>
+                            Contact
+                        </a>
+                    </div>
                 </div>
 
                 <div class="sidebar__status">
-                    <p>Security strategy and AI governance for SaaS and regulated environments: from board-level risk to detection engineering.</p>
+                    <p>Security built, governed, and commercialized: from board-level risk to detection engineering.</p>
                 </div>
 
             </div>
@@ -153,9 +160,10 @@
                         <p>
                             As CISO at Magentrix, I own information security, cyber risk, compliance, and security governance for a global SaaS platform: ISO 27001, SOC 2, PCI DSS, and an AI-enabled, agent-capable product. Before that at Zerum IT I led a 7-engineer security organization across detection engineering, platform, and threat intelligence, and built and commercially launched Zerum Titan, an LLM-native threat intelligence platform.
                         </p>
-                        <p>
-                            Having built security products before running a security program shapes how I decide: controls that ship, compliance designed in rather than retrofitted, and AI that is secured and governed, not just deployed.
-                        </p>
+                        <div class="thesis">
+                            <p class="thesis__line">Build security. Govern security. Commercialize security.</p>
+                            <p class="thesis__note">Having built security products before running a security program shapes how I decide: controls that ship, compliance designed in rather than retrofitted, and AI that is secured and governed, not just deployed.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -178,7 +186,7 @@
                             </ul>
                         </div>
 
-                        <p class="exp-group">Zerum IT &middot; Aug 2022 - Oct 2026 &middot; promoted twice</p>
+                        <p class="exp-group">Zerum IT &middot; Aug 2022 - Oct 2026 &middot; 3 roles &middot; 2 promotions</p>
                         <div class="exp-item">
                             <div class="exp-item__header">
                                 <h3 class="exp-item__title">Head of Security Architecture and Engineering</h3>
@@ -260,19 +268,37 @@
                     <div class="section__content">
                         <div class="project-item">
                             <h3 class="project-item__title">Zerum Lynx Cloud <span class="project-item__year">2026</span></h3>
-                            <p class="project-item__desc">A cloud-native Network Detection and Response (NDR) platform targeting Brazilian fintechs, cooperatives, and government agencies. Portuguese-first, LGPD-native, with dual deployment for multi-tenant SaaS and air-gapped appliance.</p>
+                            <p class="project-item__desc">Cloud-native Network Detection and Response (NDR) for Brazilian fintechs, cooperatives, and government agencies.</p>
+                            <dl class="project-meta">
+                                <div class="project-meta__row"><dt>Problem</dt><dd>Network detection that fits Brazilian regulated environments: LGPD data boundaries, air-gapped government requirements, Portuguese-first operations.</dd></div>
+                                <div class="project-meta__row"><dt>Architecture</dt><dd>Cloud-native NDR core with dual deployment modes, multi-tenant SaaS and air-gapped appliance.</dd></div>
+                                <div class="project-meta__row"><dt>My role</dt><dd>Owned security strategy and architecture as Head of Security Architecture and Engineering.</dd></div>
+                                <div class="project-meta__row"><dt>Outcome</dt><dd>Multi-tenant scale and secure expansion into new markets on a compliance-native foundation.</dd></div>
+                            </dl>
                         </div>
                         <div class="project-item">
                             <h3 class="project-item__title">Zerum Omnivision <span class="project-item__year">2024 - 2026</span></h3>
-                            <p class="project-item__desc">A unified AI security operations platform for the Zerum product ecosystem. Provides AI-assisted alert triage, threat intel enrichment, and cross-platform detection workflows under a multi-tenant, LGPD-compliant architecture.</p>
+                            <p class="project-item__desc">A unified AI security operations platform for the Zerum product ecosystem.</p>
+                            <dl class="project-meta">
+                                <div class="project-meta__row"><dt>Problem</dt><dd>Alert triage and threat-intel enrichment fragmented across a growing product ecosystem.</dd></div>
+                                <div class="project-meta__row"><dt>Architecture</dt><dd>One multi-tenant, LGPD-compliant platform unifying AI-assisted alert triage, threat-intel enrichment, and cross-platform detection workflows.</dd></div>
+                                <div class="project-meta__row"><dt>My role</dt><dd>Security architecture ownership and direction across the Zerum product ecosystem.</dd></div>
+                                <div class="project-meta__row"><dt>Outcome</dt><dd>A single operating picture for security operations across products, without per-product silos.</dd></div>
+                            </dl>
                         </div>
                         <div class="project-item">
                             <h3 class="project-item__title">Zerum Titan <span class="project-item__year">2024 - 2025</span></h3>
-                            <p class="project-item__desc">An LLM-native threat intelligence platform that aggregates open, commercial, and internal sources into a single orchestrated response engine. Built from prototype to commercial adoption in six months across the existing multi-tenant environment.</p>
+                            <p class="project-item__desc">An LLM-native threat intelligence platform: open, commercial, and internal sources aggregated into a single orchestrated response engine.</p>
+                            <dl class="project-meta">
+                                <div class="project-meta__row"><dt>Problem</dt><dd>Threat intelligence scattered across open, commercial, and internal sources with no orchestrated response.</dd></div>
+                                <div class="project-meta__row"><dt>Architecture</dt><dd>LLM-native aggregation and orchestrated response, built on the existing multi-tenant environment.</dd></div>
+                                <div class="project-meta__row"><dt>My role</dt><dd>Product and security architecture, technical leadership, prototype to commercial launch.</dd></div>
+                                <div class="project-meta__row"><dt>Outcome</dt><dd>60% MTTD reduction across five clients against the prior-year baseline, and Zerum's first recurring SaaS security revenue, six months from prototype.</dd></div>
+                            </dl>
                         </div>
 
-                        <h3 class="subsection__heading">Earlier Work</h3>
-                        <p class="project-item__desc">Before security leadership: the <a href="https://www.nommowater.com/" target="_blank" rel="noopener noreferrer">Nommo smart water pump</a> (IoT and edge AI, launched at Web Summit Lisbon 2021), the <a href="https://www12.senado.leg.br/dados-abertos/legislativo/parlamentares/indice-onomastico-dos-anais-do-imperio" target="_blank" rel="noopener noreferrer">Onomastic Index of Empire Senators</a> for the Brazilian Federal Senate (open data), and geoprocessing for the National Environmental Licensing Portal (<a href="https://pnla.mma.gov.br/mapas-de-licenciamento-ambiental" target="_blank" rel="noopener noreferrer">PNLA</a>).</p>
+                        <h3 class="subsection__heading">Selected Earlier Engineering Work</h3>
+                        <p class="project-item__desc">The <a href="https://www.nommowater.com/" target="_blank" rel="noopener noreferrer">Nommo smart water pump</a> (IoT and edge AI, launched at Web Summit Lisbon 2021), the <a href="https://www12.senado.leg.br/dados-abertos/legislativo/parlamentares/indice-onomastico-dos-anais-do-imperio" target="_blank" rel="noopener noreferrer">Onomastic Index of Empire Senators</a> for the Brazilian Federal Senate (open data), and geoprocessing for the National Environmental Licensing Portal (<a href="https://pnla.mma.gov.br/mapas-de-licenciamento-ambiental" target="_blank" rel="noopener noreferrer">PNLA</a>).</p>
                     </div>
                 </div>
             </section>
@@ -321,8 +347,37 @@
                                 <p>Build secure-by-design platforms and scalable control frameworks.</p>
                             </div>
                             <div class="ciso-focus__item">
+                                <h3 class="ciso-focus__title">Security Operations & Threat Intelligence</h3>
+                                <p>Run detection engineering, incident response, and threat intelligence at enterprise scale.</p>
+                            </div>
+                            <div class="ciso-focus__item">
                                 <h3 class="ciso-focus__title">Customer Trust</h3>
                                 <p>Turn security, privacy, and compliance into enterprise customer assurance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="perspective" class="section">
+                <div class="section__inner">
+                    <h2 class="section__heading">Perspective</h2>
+                    <div class="section__content">
+                        <p class="lead">
+                            AI security is not model risk with a new name. When software can act on its own, calling tools and moving data, the security question shifts from what a model says to what the system is allowed to do. That shift is what I govern at Magentrix, and it is where I believe most security programs are still underbuilt. Three principles anchor how I approach it:
+                        </p>
+                        <div class="pov-grid">
+                            <div class="pov-principle">
+                                <h3 class="pov-principle__title">Agents need identity.</h3>
+                                <p>An agent that takes actions in production is a principal, not a feature. It needs its own identity, credentials, and audit trail. Otherwise nobody can answer who did what when an autonomous action goes wrong.</p>
+                            </div>
+                            <div class="pov-principle">
+                                <h3 class="pov-principle__title">Tools need authorization.</h3>
+                                <p>MCP-connected workflows expand the attack surface faster than most teams notice. Every tool an agent can reach is an authorization decision: scope it, gate it, and log it before it becomes an open path to customer data.</p>
+                            </div>
+                            <div class="pov-principle">
+                                <h3 class="pov-principle__title">Autonomy needs controls and observability.</h3>
+                                <p>Action-capable agents cannot be secured by guardrails alone. Autonomy requires policy enforcement, behavioral monitoring, and blast-radius limits, designed in from the start rather than bolted on after the first incident.</p>
                             </div>
                         </div>
                     </div>
@@ -334,27 +389,27 @@
                     <h2 class="section__heading">Core Competencies</h2>
                     <div class="section__content">
                         <div class="competency-group">
-                            <h3 class="competency-group__title">Executive Strategy</h3>
+                            <h3 class="competency-group__title">Cyber Risk & Executive Strategy</h3>
                             <p>Security Strategy, Cyber Risk, Board Reporting, Security Governance, Budget Management, Product Commercialization</p>
                         </div>
                         <div class="competency-group">
-                            <h3 class="competency-group__title">Security Architecture</h3>
-                            <p>Enterprise Security Architecture, Cloud Security (AWS, Azure), Secure-by-Design, Detection Architecture, Multi-Tenancy</p>
-                        </div>
-                        <div class="competency-group">
-                            <h3 class="competency-group__title">AI Security</h3>
+                            <h3 class="competency-group__title">AI Security & Agent Governance</h3>
                             <p>AI Governance (ISO 42001, NIST AI RMF), Agent Security, MCP Security, LLM Security, AI Risk</p>
                         </div>
                         <div class="competency-group">
-                            <h3 class="competency-group__title">Cyber Defense</h3>
+                            <h3 class="competency-group__title">Security Architecture & Engineering</h3>
+                            <p>Enterprise Security Architecture, Cloud Security (AWS, Azure), Secure-by-Design, Detection Architecture, Multi-Tenancy</p>
+                        </div>
+                        <div class="competency-group">
+                            <h3 class="competency-group__title">Security Operations & Threat Intelligence</h3>
                             <p>SOC Engineering, Threat Intelligence, Detection Engineering, Incident Response, Threat Hunting, MITRE ATT&CK Mapping, SOAR Automation, Bug Bounty & Vulnerability Disclosure</p>
                         </div>
                         <div class="competency-group">
-                            <h3 class="competency-group__title">Trust & Compliance</h3>
+                            <h3 class="competency-group__title">Trust, Compliance & Customer Assurance</h3>
                             <p>ISO 27001, ISO 42001, SOC 2, PCI DSS, LGPD/GDPR, Customer Security Assurance</p>
                         </div>
                         <div class="competency-group">
-                            <h3 class="competency-group__title">Engineering</h3>
+                            <h3 class="competency-group__title">Engineering Foundation</h3>
                             <p>SIEM (Wazuh, Elastic), NDR, MISP/OpenCTI, DevSecOps, OCSF/STIX/TAXII, Rust, Python, TypeScript, Docker, Kubernetes/Helm, CI/CD</p>
                         </div>
                     </div>
@@ -371,26 +426,26 @@
                                 <p class="cert-item__issuer">Certified Information Systems Security Professional</p>
                                 <p class="cert-item__org">(ISC)<sup>2</sup></p>
                             </a>
-                            <a class="cert-item" href="https://www.credly.com/badges/05a62702-a50c-460e-986d-f0adb2c85278" target="_blank" rel="noopener noreferrer">
-                                <h3 class="cert-item__title">ISO/IEC 42001:2023 Lead Auditor</h3>
-                                <p class="cert-item__issuer">AI Management Systems</p>
-                                <p class="cert-item__org">Mastermind</p>
-                            </a>
                             <a class="cert-item" href="https://learn.mastermindassurance.com/certificates/8kbiueqpuu" target="_blank" rel="noopener noreferrer">
                                 <h3 class="cert-item__title">ISO/IEC 27001:2022 Lead Auditor</h3>
                                 <p class="cert-item__issuer">Information Security Management</p>
                                 <p class="cert-item__org">Mastermind</p>
                             </a>
-                            <a class="cert-item" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=4650C5261DB23012A5DCA8134F3F2975F6B9B74E0C9A27094C6B4ED68ABC59BA" target="_blank" rel="noopener noreferrer">
-                                <h3 class="cert-item__title">OCI Generative AI Professional</h3>
-                                <p class="cert-item__issuer">Oracle Cloud Infrastructure</p>
-                                <p class="cert-item__org">Oracle</p>
+                            <a class="cert-item" href="https://www.credly.com/badges/05a62702-a50c-460e-986d-f0adb2c85278" target="_blank" rel="noopener noreferrer">
+                                <h3 class="cert-item__title">ISO/IEC 42001:2023 Lead Auditor</h3>
+                                <p class="cert-item__issuer">AI Management Systems</p>
+                                <p class="cert-item__org">Mastermind</p>
                             </a>
                             <div class="cert-item cert-item--in-progress">
                                 <h3 class="cert-item__title">CISM</h3>
                                 <p class="cert-item__issuer">Certified Information Security Manager (October 2026 examination)</p>
                                 <p class="cert-item__org">ISACA</p>
                             </div>
+                            <a class="cert-item cert-item--secondary" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=4650C5261DB23012A5DCA8134F3F2975F6B9B74E0C9A27094C6B4ED68ABC59BA" target="_blank" rel="noopener noreferrer">
+                                <h3 class="cert-item__title">OCI Generative AI Professional</h3>
+                                <p class="cert-item__issuer">Oracle Cloud Infrastructure</p>
+                                <p class="cert-item__org">Oracle</p>
+                            </a>
                         </div>
                     </div>
                 </div>
